@@ -37,8 +37,4 @@ export class UserComponent implements OnInit {
     this.cargarUsuarios();
   }
 
-  editarUsuario(index: number) {
-    this._usuarioService.eliminarUsuario(index);
-    this.cargarUsuarios();
-  }
 }

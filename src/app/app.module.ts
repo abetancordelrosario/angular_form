@@ -9,7 +9,6 @@ import { UserComponent } from './components/user/user.component';
 import { CrearUsuarioComponent } from './components/user/crear-usuario/crear-usuario.component';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
