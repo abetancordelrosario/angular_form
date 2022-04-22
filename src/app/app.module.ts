@@ -5,15 +5,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './components/shared/shared.module';
-import { UserComponent } from './components/user/user.component';
-import { CrearUsuarioComponent } from './components/user/crear-usuario/crear-usuario.component';
+import { TasksComponent } from './components/tasks/tasks.component';
+import { CreateTaskComponent } from './components/tasks/create-task/create-task.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent,
-    CrearUsuarioComponent
+    TasksComponent,
+    CreateTaskComponent
   ],
   imports: [
     BrowserModule,

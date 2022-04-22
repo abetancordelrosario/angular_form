@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CrearUsuarioComponent } from './components/user/crear-usuario/crear-usuario.component';
-import { UserComponent } from './components/user/user.component';
+import { CreateTaskComponent } from './components/tasks/create-task/create-task.component';
+import { TasksComponent } from './components/tasks/tasks.component';
 
 
 const routes: Routes = [
-  { path: '', redirectTo: 'user', pathMatch: 'full' },
-  { path: 'user', component: UserComponent },
-  { path: 'user/crear-usuario/:id', component: CrearUsuarioComponent },
-  { path: 'crear-usuario', component: CrearUsuarioComponent },
+  { path: '', redirectTo: 'tasks', pathMatch: 'full' },
+  { path: 'tasks', component: TasksComponent },
+  { path: 'tasks/create-task/:id', component: CreateTaskComponent },
+  { path: 'create-task', component: CreateTaskComponent },
 ];
 
 @NgModule({

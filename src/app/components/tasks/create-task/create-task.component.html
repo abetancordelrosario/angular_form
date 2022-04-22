@@ -1,0 +1,31 @@
+<div class="container">
+    <mat-toolbar>
+        <span>Create Task</span>
+        <div class="spacer"></div>
+    </mat-toolbar>
+    <mat-card style="margin-top: 10px;">
+        <form [formGroup]="form" (ngSubmit)="addtask()">
+            <mat-grid-list cols="4" rowHeight="70px" style="margin-left: 200px;">
+                <mat-grid-tile [colspan]="1" [rowspan]="1" >
+                    <mat-form-field>
+                        <mat-label>Name</mat-label>
+                        <input matInput autocomplete="off" formControlName="name">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="3" [rowspan]="5" >
+    
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1" >
+                    <mat-form-field>
+                        <mat-label>Description</mat-label>
+                        <input matInput autocomplete="off" formControlName="description">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1" >
+                    <button mat-raised-button style="margin-right: 30px;" routerLink="/tasks">Volver</button>
+                    <button type="submit" [disabled]="form.invalid" mat-raised-button color="primary" >Aceptar</button>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </form>
+    </mat-card>
+</div>
